@@ -1,9 +1,9 @@
 describe("enum type", () => {
   it("enum type", () => {
     enum priority {
-      VIP,
-      VVIP,
-      REGULAR,
+      VIP = "VIP",
+      VVIP = "VVIP",
+      REGULAR = "REGULAR",
     }
     const Hendy: {
       id: string | number;
