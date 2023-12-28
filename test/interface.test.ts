@@ -8,6 +8,17 @@ describe("interface", () => {
       descrition?: string;
     }
 
+    interface addFunction {
+      (firstValue: number, secondValue: number): number;
+    }
+
+    const addNumber: addFunction = (
+      firstValue: number,
+      secondValue: number
+    ): number => {
+      return firstValue + secondValue;
+    };
+
     const Hendy: person = {
       id: 2201,
       name: "Hendy",
@@ -17,5 +28,6 @@ describe("interface", () => {
 
     expect(Hendy.name).toBe("Hendy");
     expect(Hendy.age).toBe(22);
+    expect(addNumber(10, 10)).toBe(20);
   });
 });
