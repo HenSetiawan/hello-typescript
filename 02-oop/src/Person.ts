@@ -8,6 +8,10 @@ class Person {
     this.age = age;
     this.name = name;
   }
+
+  sayHello(name: string): string {
+    return `hello ${name} nama saya ${this.name}`;
+  }
 }
 
-const hendy: Person = new Person(1, 22, "Hendy");
+export { Person };
