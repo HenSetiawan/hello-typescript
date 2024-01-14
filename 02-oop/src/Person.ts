@@ -1,7 +1,7 @@
 class Person {
-  _name: string;
-  readonly id: number;
-  _age: number;
+  protected _name: string;
+  protected readonly id: number;
+  protected _age: number;
 
   constructor(id: number, age: number, name: string) {
     this.id = id;
