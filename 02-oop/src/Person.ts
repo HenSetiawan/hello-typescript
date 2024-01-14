@@ -3,10 +3,10 @@ class Person {
   readonly id: number;
   _age: number;
 
-  constructor(id: number, _age: number, _name: string) {
+  constructor(id: number, age: number, name: string) {
     this.id = id;
-    this._age = _age;
-    this._name = _name;
+    this._age = age;
+    this._name = name;
   }
 }
 
