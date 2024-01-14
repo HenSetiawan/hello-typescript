@@ -1,8 +1,8 @@
-import { Person } from "../src/Person";
+import { Employee } from "../src/Employee";
 
 describe("hello testing", () => {
   it("method should work", () => {
-    const hendy = new Person(23, 22, "Hendy");
+    const hendy = new Employee(23, 22, "Hendy");
     expect(hendy.sayHello("Dimas")).toBe("hello Dimas nama saya Hendy");
     hendy.name = "Setiawan";
     expect(hendy.sayHello("Dimas")).toBe("hello Dimas nama saya Setiawan");
