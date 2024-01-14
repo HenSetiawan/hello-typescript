@@ -8,6 +8,10 @@ class Person {
     this._age = age;
     this._name = name;
   }
+
+  sayHello(_name: string): string {
+    return `hello ${_name} my name is ${this._name}`;
+  }
 }
 
 export { Person };

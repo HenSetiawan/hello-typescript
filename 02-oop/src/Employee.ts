@@ -12,7 +12,7 @@ class Employee extends Person implements hasDepartmen {
     this.department = department;
   }
   sayHello(_name: string): string {
-    return `hello ${_name} nama saya ${this._name}`;
+    return `hello ${_name} my name is ${this._name} and im is employee here`;
   }
 
   get name(): string {
