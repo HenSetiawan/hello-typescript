@@ -1,16 +1,24 @@
 class Person {
   readonly id: number;
-  age: number;
-  name: string;
+  _age: number;
+  _name: string;
 
-  constructor(id: number, age: number, name: string) {
+  constructor(id: number, _age: number, _name: string) {
     this.id = id;
-    this.age = age;
-    this.name = name;
+    this._age = _age;
+    this._name = _name;
   }
 
-  sayHello(name: string): string {
-    return `hello ${name} nama saya ${this.name}`;
+  sayHello(_name: string): string {
+    return `hello ${_name} nama saya ${this._name}`;
+  }
+
+  get name(): string {
+    return this._name;
+  }
+
+  set name(name: string) {
+    this._name = name;
   }
 }
 
