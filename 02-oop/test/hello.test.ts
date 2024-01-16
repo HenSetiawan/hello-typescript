@@ -1,5 +1,6 @@
 import { Employee } from "../src/Employee";
 import { Staff } from "../src/Staff";
+import { Configuration } from "../src/Configuration";
 
 describe("hello testing", () => {
   it("method should work", () => {
@@ -14,5 +15,7 @@ describe("hello testing", () => {
       "hello Dimas my name is Setiawan and im is employee here"
     );
     expect(hendy.name).toBe("Setiawan");
+
+    expect(Configuration.AUTHOR).toBe("Hendy Setiawan");
   });
 });
