@@ -1,4 +1,4 @@
-class Person {
+abstract class Person {
   protected _name: string;
   protected readonly id: number;
   protected _age: number;
@@ -9,9 +9,7 @@ class Person {
     this._name = name;
   }
 
-  sayHello(_name: string): string {
-    return `hello ${_name} my name is ${this._name}`;
-  }
+  abstract sayHello(name: string): string;
 }
 
 export { Person };
